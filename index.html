@@ -30,7 +30,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one">
                     <a class="navbar-brand wow fadeIn" href="#">
-                        <img src="./img/logo.png" width="160" class="img-logo" />
+                        <img src="./img/logomaravilha.png" width="160" class="img-logo" />
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
                         <span class="navbar-toggler-icon">
@@ -40,17 +40,17 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ml-auto mr-auto wow fadeIn">
                             <li class="nav-item">
-                                <a href="#reservas" class="nav-link"><b>Reservas</b></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#servicos" class="nav-link"><b>Serviços</b></a>
-                            </li>
-                            <li class="nav-item">
                                 <a href="#cardapio" class="nav-link"><b>Cardápio</b></a>
                             </li>
                             <li class="nav-item">
-                                <a href="#depoimentos" class="nav-link"><b>Depoimentos</b></a>
+                                <a href="#reservas" class="nav-link"><b>Reservas</b></a>
                             </li>
+                          <!--  <li class="nav-item">
+                                <a href="#servicos" class="nav-link"><b>Serviços</b></a>
+                            </li> -->
+                            <!-- <li class="nav-item">
+                                <a href="#depoimentos" class="nav-link"><b>Depoimentos</b></a>
+                            </li> -->
                         </ul>
                         <a class="btn btn-white btn-icon wow fadeIn" onclick="cardapio.metodos.abrirCarrinho(true)">
                             Meu carrinho <span class="icon">
@@ -68,28 +68,26 @@
                 <div class="row">
                     <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-one">
                         <div class="d-flex text-banner">
-                            <h1 class="wow fadeInLeft"><b>Escolha sua comida <b class="color-primary">favorita.</b></b></h1>
+                            <h1 class="wow fadeInLeft"><b>Seu <b class="color-primary">café da manhã</b>, na palma da sua mão. </b></h1>
                             <p class="wow fadeInLeft delay-02s">
                                 Aproveite nosso cardápio! Escolha o que desejar e recebe em sua casa de forma rápida e segura.
                             </p>
                             <div class="wow fadeIn delay-05s">
-                                <a class="btn btn-yellow mt-4 mr-3">
+                                <a href="#cardapio" class="btn btn-yellow mt-4 mr-3">
                                     Ver cardápio
                                 </a>
                                 <a href="#" class="btn btn-white btn-icon-left mt-4" id="btnLigar">
                                     <span class="icon-left">
                                         <i class="fa fa-phone"></i>
                                     </span>
-                                    (79) 98116-9700
+                                    (79) 99962-8522
                                 </a>
                             </div>
                         </div>
                         <a href="https://www.instagram.com/toderangobr/" target="_blank" class="btn btn-sm btn-white btn-social mt-4 mr-3 wow fadeIn delay-05s">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a class="btn btn-sm btn-white btn-social mt-4 mr-3 wow fadeIn delay-05s">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
+
                         <a class="btn btn-sm btn-white btn-social mt-4 wow fadeIn delay-05s">
                             <i class="fab fa-whatsapp"></i>
                         </a>
@@ -98,7 +96,7 @@
                     <div class="col-6 no-mobile">
                         <div class="card-banner wow fadeIn delay-02s"></div>
                         <div class="d-flex img-banner wow fadeIn delay-05s">
-                            <img src="./img/burguer.png" />
+                          <img src="./img/burguer.png" />
                         </div>
                         <div class="card card-case wow fadeInRight delay-07s">
                             "Entrega rápida e funcionários simpáticos.
@@ -183,19 +181,19 @@
 
                     <div class="col-12 col-one container-menu wow fadeInUp">
                         <a id="menu-burgers" class="btn btn-white btn-sm mr-3 active" onclick="cardapio.metodos.obterItensCardapio('burgers')">
-                            <i class="fas fa-hamburger"></i>&nbsp; Burgers
+                            <i class="fas fa-hamburger"></i>&nbsp; Sanduíches
                         </a>
                         <a id="menu-pizzas" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('pizzas')">
-                            <i class="fas fa-pizza-slice"></i>&nbsp; Pizzas
+                            <i class="fas fa-pizza-slice"></i>&nbsp; Cafés
                         </a>
                         <a id="menu-churrasco" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('churrasco')">
-                            <i class="fas fa-drumstick-bite"></i>&nbsp; Churrasco
+                            <i class="fas fa-drumstick-bite"></i>&nbsp; Porções
                         </a>
                         <a id="menu-steaks" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('steaks')">
-                            <i class="fas fa-bacon"></i>&nbsp; Steaks
+                            <i class="fas fa-bacon"></i>&nbsp; Bebidas
                         </a>
                         <a id="menu-bebidas" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('bebidas')">
-                            <i class="fas fa-cocktail"></i>&nbsp; Bebidas
+                            <i class="fas fa-cocktail"></i>&nbsp; Salgados
                         </a>
                         <a id="menu-sobremesas" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('sobremesas')">
                             <i class="fas fa-ice-cream"></i>&nbsp; Sobremesas
@@ -220,14 +218,14 @@
             </div>
         </section>
 
-        <section class="depoimentos" id="depoimentos">
+       <!--  <section class="depoimentos" id="depoimentos">
 
             <div class="background-depoimentos"></div>
 
             <div class="container">
                 <div class="row">
 
-                    <div class="col-5 no-mobile text-center">
+                   <div class="col-5 no-mobile text-center">
                         <div class="card-depoimentos wow fadeIn"></div>
                         <div class="d-flex img-banner wow fadeInLeft delay-02s">
                             <img src="./img/pizzas.png" />
@@ -324,7 +322,7 @@
                 </div>
             </div>
         </section>
-
+-->
         <section class="reserva" id="reservas">
             <div class="container">
                 <div class="row">
@@ -370,12 +368,12 @@
                 <div class="row">
 
                     <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-one container-logo-footer wow fadeIn">
-                        <img class="logo-footer" src="./img/logo.png" />
+                        <img class="logo-footer" src="./img/logomaravilha.png" />
                     </div>
 
                     <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-one container-texto-footer wow fadeIn">
                         <p class="mb-0">
-                            <b>Menu On-line</b> &copy; Todos os direitos reservados
+                            <b>Panificação Maravilha</b> &copy; Todos os direitos reservados
                         </p>
                     </div>
 
@@ -383,8 +381,6 @@
                         <a class="btn btn-sm btn-white btn-social mr-3">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a class="btn btn-sm btn-white btn-social mr-3">
-                            <i class="fab fa-facebook-f"></i>
                         </a>
                         <a class="btn btn-sm btn-white btn-social">
                             <i class="fab fa-whatsapp"></i>

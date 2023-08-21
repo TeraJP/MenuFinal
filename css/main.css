@@ -14,7 +14,7 @@
     --color-black-heavy: #000000;
     --color-text: #4f4f4f;
     --color-text-out: #90908e;
-    --color-primary: #ffbf00;
+    --color-primary: #8f5510;
     --color-secondary: #fff2cc;
     --color-white: #ffffff;
     --color-red: #e74c3c;
@@ -52,8 +52,8 @@ a.navbar-brand {
 }
 
 .btn-white {
-    background-color: var(--color-white);
-    color: var(--color-black)!important;
+    background-color: var(--color-text-out);
+    color: var(--color-white)!important;
     border-radius: 20px;
     padding: 15px 25px;
     font-size: 20px;
@@ -144,7 +144,7 @@ a.navbar-brand {
 .card-banner {
     height: 450px;
     width: 450px;
-    border-radius: 170px;
+    border-radius: 110px;
     background-color: #f4c949;
     position: absolute;
     right: 0;
@@ -329,7 +329,7 @@ a.navbar-brand {
 }
 
 .card-item:hover .price-produto {
-    color: var(--color-black-heavy)!important;
+    color: var(--color-white)!important;
     margin-top: 20px;
 }
 
